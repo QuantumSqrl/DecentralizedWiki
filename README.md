@@ -1,1 +1,1 @@
-
+Decentralized wiki platform
