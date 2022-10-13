@@ -30,6 +30,7 @@ export default function Home({ allPostsData }) {
       </section>
 
       <section className={`${utilStyles.headingMd} ${utilStyles.padding1px}`}>
+      <div class="bg-clip-border p-6 bg-black-600 border-4">
         <h2 className={utilStyles.headingLg}>Articles</h2>
         <ul class="grid grid-cols-2 gap-4">
           {allPostsData.map(({ id, date, title }) => (
@@ -41,6 +42,7 @@ export default function Home({ allPostsData }) {
             </li>
           ))}
         </ul>
+        </div>
       </section>
     </Layout>
   );
