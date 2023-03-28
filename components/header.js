@@ -21,7 +21,7 @@ export default function Header() {
 
                 <div className={utilStyles.top}>
                     <Link href="/">
-                        <Image src={Logo} height={50} width={50} />
+                        <Image src={Logo} height={55} width={55} />
                     </Link>
                 </div>
 
