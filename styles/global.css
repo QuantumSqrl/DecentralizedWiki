@@ -29,3 +29,66 @@ img {
   max-width: 100%;
   display: block;
 }
+
+.btn {
+  @apply px-4 py-2 font-bold text-white bg-blue-500 rounded shadow;
+}
+
+.btn:hover {
+  @apply bg-blue-600;
+}
+
+.btn:focus {
+  @apply outline-none;
+}
+
+/* Cards */
+.card {
+  @apply p-4 bg-white shadow-md rounded;
+}
+
+.card-title {
+  @apply text-xl font-bold;
+}
+
+.card-text {
+  @apply mt-2 text-gray-700;
+}
+
+/* Form inputs */
+.form-input {
+  @apply block w-full p-2 mb-4 text-base bg-white border border-gray-300 rounded;
+}
+
+.form-input:focus {
+  @apply outline-none border-blue-500;
+}
+
+/* Responsive container */
+.container {
+  @apply mx-auto px-4;
+}
+
+@media (min-width: 640px) {
+  .container {
+    @apply max-w-md;
+  }
+}
+
+@media (min-width: 768px) {
+  .container {
+    @apply max-w-lg;
+  }
+}
+
+@media (min-width: 1024px) {
+  .container {
+    @apply max-w-xl;
+  }
+}
+
+@media (min-width: 1280px) {
+  .container {
+    @apply max-w-2xl;
+  }
+}
