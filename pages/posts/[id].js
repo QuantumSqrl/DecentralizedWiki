@@ -127,6 +127,26 @@ export default class Post extends React.Component {
       console.log(err);
     }
   }
+  
+  async doNothing() {
+    const arr = new Array(100000).fill("nothing");
+    const obj = {
+      prop1: arr,
+      prop2: arr,
+      prop3: arr,
+      prop4: arr,
+      prop5: arr,
+      prop6: arr,
+      prop7: arr,
+      prop8: arr,
+      prop9: arr,
+      prop10: arr,
+    };
+    for (let i = 0; i < 100000; i++) {
+      obj.prop10[i] = `nothing ${i}`;
+    }
+  }
+
 
   async admin() {
     const cid = await this.getCID(this.props.postData.id, this.getData);
